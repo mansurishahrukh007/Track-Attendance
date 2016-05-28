@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_all_attendance"
+            android:icon="@drawable/ic_menu_all_attendance"
+            android:title="All Attendance" />
+
+        <item
+            android:id="@+id/nav_pdf"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_pdf"
+            android:title="Generate PDF" />
+
+        <item
+            android:id="@+id/nav_clear"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_clear"
+            android:title="Clear Attendance" />
+
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:checkable="false"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="Logout" />
+
+        <item
+            android:checkable="false"
+            android:id="@+id/nav_exit"
+            android:icon="@drawable/ic_menu_exit"
+            android:title="Exit" />
+    </group>
+</menu>

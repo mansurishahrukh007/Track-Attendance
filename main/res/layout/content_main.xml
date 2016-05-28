@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mansurishahrukh007.trackattendance.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="Provide Attendance"
+                android:textSize="36dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attended :"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/etAttended"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total :"
+                    android:textSize="24dp" />
+
+                <EditText
+                    android:id="@+id/etTotal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textSize="24dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10-4-2016"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAddAttendance"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button"
+                    android:text="Add"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnDeleteAttendance"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnModifyAttendance"
+                    android:layout_width="@dimen/button_width"
+                    android:layout_height="@dimen/button_height"
+                    android:background="@drawable/button"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Attendance : "
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tvTotalAttendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPercentageAttendance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="59.45%"
+                    android:textSize="90dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
